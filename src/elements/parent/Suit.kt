@@ -20,7 +20,8 @@ open class Suit(var name: String = "") {
             winFrom() -> ResultSuit(ResultSuit.WIN)
             loseTo() -> ResultSuit(ResultSuit.LOSE)
             drawFrom() -> ResultSuit(ResultSuit.DRAW)
-            else -> ResultSuit(ResultSuit.EMPTY)
+            //penambahan else untuk element other
+            else -> ResultSuit(ResultSuit.ERROR)
         }
     }
 }
